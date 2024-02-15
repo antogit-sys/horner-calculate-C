@@ -5,7 +5,6 @@
 	(sizeof(polynomial)/sizeof(polynomial[0])-1)
 
 int hornerP(int*, int, int);
-double pow(double, double);
 	
 int main(void)
 {
@@ -33,11 +32,4 @@ int hornerP(int* poly, int degree, int x){
 		done = done * x + poly[i]; 
 	
 	return done;	
-}
-
-double pow(double base, double exp){ //base^exp 
-	double done = 1;
-	while(exp --> 0)
-		done *= base;
-	return done;
 }
